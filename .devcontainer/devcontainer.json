@@ -1,0 +1,49 @@
+{
+  "name": "sound-playground",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true,
+      "username": "automatic",
+      "userUid": "automatic",
+      "userGid": "automatic"
+    },
+    "ghcr.io/christophermacgown/devcontainer-features/direnv:1": {
+      "autoEnable": true,
+      "architecture": "amd64",
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mikestead.dotenv",
+        "streetsidesoftware.code-spell-checker",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "naumovs.color-highlight",
+        "kamikillerto.vscode-colorize",
+        "eamodio.gitlens",
+        "GraphQL.vscode-graphql",
+        "kumar-harsh.graphql-for-vscode",
+        "codezombiech.gitignore",
+        "wmaurer.change-case",
+        "jgclark.vscode-todo-highlight",
+        "johnpapa.vscode-peacock",
+        "GraphQL.vscode-graphql-syntax",
+        "pflannery.vscode-versionlens",
+        "Prisma.prisma",
+        "bradgashler.htmltagwrap",
+        "bradlc.vscode-tailwindcss",
+        "GitHub.copilot",
+        "DotJoshJohnson.xml"
+      ]
+    }
+  }
+}

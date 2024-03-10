@@ -16,7 +16,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var script = document.createElement('script');
+                script.src = 'https://sfxr.me/riffwave.js';
+                script.async = true;
+                document.body.appendChild(script);
+              })();
+            `,
+          }}
+        ></script>
+      </body>
     </html>
   );
 }
